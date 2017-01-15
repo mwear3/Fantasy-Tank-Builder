@@ -7,7 +7,7 @@ Remember when you said you wanted a cool flamethrower in game? Or that time when
 
 **Play Mode:**
 
-`W` `A` `S` `D` or `Arrow` keys to move.
+`W` `A` `S` `D` or `↑` `←` `↓` `→` (`Arrow`) keys to move.
 
 `Left Click` to fire.
 
