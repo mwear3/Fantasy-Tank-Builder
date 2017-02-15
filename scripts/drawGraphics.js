@@ -123,6 +123,27 @@ function drawDrone(x, y, size, angle, color) {
 	ctx.restore();
 }
 
+function drawAutoDrone(x, y, size, angle, color) {
+	ctx.save();
+	ctx.strokeStyle = "#555555";
+	ctx.lineWidth = 5;
+	ctx.fillStyle = color;
+	ctx.translate(x, y);
+	ctx.beginPath();
+	ctx.rotate(angle * (Math.PI / 180));
+	ctx.moveTo(0, size);
+	ctx.rotate(120 * (Math.PI / 180));
+	ctx.lineTo(0, size);
+	ctx.rotate(120 * (Math.PI / 180));
+	ctx.lineTo(0, size);
+	ctx.rotate(120 * (Math.PI / 180));
+	ctx.lineTo(0, size);
+	ctx.closePath();
+	ctx.fill();
+	ctx.stroke();
+	ctx.restore();
+}
+
 function drawNecro(x, y, size, angle, color) {
 	ctx.save();
 	ctx.fillStyle = color;
