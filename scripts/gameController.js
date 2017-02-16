@@ -998,6 +998,9 @@ function placeBarrel() {
 		btype = 3;
 	} else if (document.getElementById("bullet").value === "auto") {
 		btype = 4;
+		
+	} else if (document.getElementById("bullet").value === "factory") {
+		btype = 5;
 	}
 
 	for (var n = 1; n <= mirrorBarrels; n += 1) {
