@@ -213,6 +213,31 @@ function drawPentagon(x, y, size, angle, color) {
 	ctx.restore();
 }
 
+function drawOctagon(x, y, size, angle, color) {
+	ctx.save();
+	ctx.strokeStyle = "#32CD32";
+	ctx.lineWidth = 5;
+	ctx.fillStyle = color;
+	ctx.translate(x, y);
+	ctx.rotate(angle * (Math.PI / 180));
+	ctx.beginPath();
+	ctx.moveTo(0, size);
+	ctx.rotate(360 / 5 * (Math.PI / 180));
+	ctx.lineTo(0, size);
+	ctx.rotate(360 / 5 * (Math.PI / 180));
+	ctx.lineTo(0, size);
+	ctx.rotate(360 / 5 * (Math.PI / 180));
+	ctx.lineTo(0, size);
+	ctx.rotate(360 / 5 * (Math.PI / 180));
+	ctx.lineTo(0, size);
+	ctx.rotate(360 / 5 * (Math.PI / 180));
+	ctx.lineTo(0, size);
+	ctx.closePath();
+	ctx.fill();
+	ctx.stroke();
+	ctx.restore();
+}
+
 function drawPoly(x, y, size, angle, color, sides) {
 	ctx.save();
 	ctx.strokeStyle = "#555555";
